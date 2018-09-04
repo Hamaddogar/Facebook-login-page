@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+
+            margin:0px;
+            padding:0px;
+
+        }
+        #header {
+            width: 100%;
+            height: 90px;
+            background-color: rgba(0,0,0,.07);
+           // position: relative;
+            //background-image: url(google2_0_0.gif);
+        }
+
+        #ig{
+
+            padding-left:100px;
+            padding-top:20px;
+
+        }
+        #bu {
+            padding-left: 1200px;
+            // padding-bottom:500px;
+            color: #3079ed;
+            background-size:100px;
+        }
+        .loginBtn {
+            box-sizing: border-box;
+            position: relative;
+            /* width: 13em;  - apply for fixed size */
+            margin: 0.2em;
+            padding: 0px 15px 0px 15px;
+            border: none;
+            text-align: left;
+            line-height: 34px;
+            white-space: nowrap;
+            border-radius: 0.2em;
+            font-size: 16px;
+            color: #fff;
+        }
+        .loginBtn--google {
+            /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+            background: #4285F4;
+        }
+
+        #hed {
+            width: 100%;
+            height: 100px;
+        }
+
+        #main {
+            text-align: center;
+            font-family: 'Open Sans', arial;
+            color: #737373;
+            font-size: 38px;
+            font-weight: 400;
+            margin-top: 27px;
+            margin-bottom: 50px;
+            font-style: normal;
+        }
+        #left {
+            height: 850px;
+            width: 950px;
+            // padding-left:1000px;
+           float:left;
+           
+        }
+       
+   
+        #h{
+            text-align: center;
+            font-family: 'Open Sans', arial;
+            color: #737373;
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+        #pas {
+            line-height: 19px;
+            // margin: 0 0 1em;
+            padding-left: 250px;
+            display: block;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            padding-left:320px;
+        }
+        
+        #move{
+
+          padding-left:310px;
+         // text-align:center;
+        }
+        #hh {
+            text-align:center;
+            font-family: 'Open Sans', arial;
+            color: #737373;
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+        #pass {
+            line-height: 19px;
+            // margin: 0 0 1em;
+            padding-left: 220px;
+            display: block;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            padding-left:310px;
+        }
+        
+  
+       
+        #dis{
+
+
+            display:inline;
+        }
+        #wid{
+
+           float:right;
+         
+            
+        }
+  #wrap{
+
+      width:1500px;
+      background-color:red;
+
+  }
+        #right {
+            width: 450px;
+            height: 850px;
+            background-color: #f1f1f1;
+            margin-left:-25px;
+            float: right;
+        }
+        #strong {
+            color: black;
+           // margin-left: 5px;
+           color:black;
+           font-weight:bold;
+           font-size:1.2em;
+        }
+
+#marg{
+
+    margin-top:25px;
+  margin-bottom:25px;
+   margin-left:25px;
+   margin-bottom:25px;
+
+
+
+}
+        .coll{
+
+
+            color:#FF1F1F;
+        }
+        #put{
+
+            width:170px;
+            height:25px;
+
+
+        }
+        #putt {
+            width: 340px;
+            height: 25px;
+        }
+        #pp {
+            color: #15c;
+            text-decoration:none;
+        }
+        #strong2{
+
+            color:black;
+            font-size:1em;
+            font-weight:bold;
+        }
+        .thh {
+            background-color: #f1f1f1;
+            width: 120px;
+            height: 30px;
+            border-color: #c2c2a3;
+        }
+        #dy {
+            height:30px;
+            width:100px;
+        }
+        #mon {
+            background-color: #f1f1f1;
+            width: 300px;
+            height: 35px;
+            border-color: #c2c2a3;
+
+        }
+        
+</style>
+
+
+    <script>
+        
+      
+        function vali() {
+
+            var x = document.vform.user_name.value;
+            if (x == "") {
+
+                document.getElementById("user_error").innerHTML = ("You cann't leave empty");
+                //  x.style.border="1px solid red";
+
+                // return false;
+
+            }
+
+            var y = document.vform.password_name.value;
+            if (y == "") {
+
+                document.getElementById("password_error").innerHTML = ("You cann't leave empty");
+
+
+
+            }
+            var b = document.vform.password_conform.value;
+            if (b == "") {
+
+                document.getElementById("passwordconform_error").innerHTML = ("You cannt leave empty");
+
+
+
+            }
+            var z = document.vform.choose_name.value;
+            if (z == "") {
+
+                document.getElementById("choose_error").innerHTML = ("You cann't leave empty");
+
+
+
+            }
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+  
+</head>
+
+
+<body>
+    
+
+  
+
+    <div id="header">
+   <div><div id="ig"><img src="images/googlelogo_color_112x36dp.png" height="50" width="100"><span id="bu"><button class="loginBtn loginBtn--google">
+    sign in</button></span></div>
+   </div>
+        </div>
+       <div id="hed" >
+
+           <h1 id="main"> Create your Google Account</h1>
+          
+       </div>
+     
+    <div id="wrap">
+        <div id="left">
+            <h2 id="h">  One account is all you need</h2>
+            <p id="pas">
+               One free account gets you into everything Google.
+            </p>
+            <img src="images/Untitled (2).png" id="move">
+            <br /><br /><br /><br /><br /><br />
+            <h2 id="hh">  Take it all with you</h2>
+            <p id="pass" >Switch between devices, and pick up wherever you left off.</p>
+              <br /><br />
+            <img src="images/devices_icon (2).png" id="move"></div>
+           <div id="right">
+            <div>
+                <form id="marg"  name="vform">
+                    <table>
+                    <tr><td><strong id="strong">Name</strong></td></tr>
+                      <tr>
+                            <td>
+                                <input type="text" name="user_name" placeholder="First name" id="put" />
+
+                                <input type="text" name="last_name" placeholder="First name" id="put" />
+                                <p id="user_error" class="coll"></p>  <br />
+                                
+                            <td />
+                        <tr />
+                        <tr><td><strong id="strong2">Choose your username</strong></td></tr>
+
+                        <tr> <td>  <input type="text" name="choose_name" placeholder="@gamil.com" id="putt" />
+                                 <p id="choose_error" class="coll"></p>  <br />
+                        <tr><td><a href="#" id="pp"> <p>I prefer to use my current email address</p></a><br /></td></tr>
+                        <tr>
+                            <td></td>
+                           
+
+                            <td />
+                        <tr />
+                        <tr><td><strong id="strong2">Create a password</strong></td></tr>
+
+                        <tr>
+                            <td>
+                                <input type="password" name="password_name" placeholder="" id="putt" />
+
+                                <p id="password_error" class="coll"></p>
+                                <br />
+                            <td />
+
+                        <tr />
+
+
+                        <tr><td><strong id="strong2">Conform password</strong></td></tr>
+
+                        <tr>
+                            <td>
+                                <input type="password" name="password_conform" placeholder="" id="putt" />
+                                <p id="passwordconform_error" class="coll"></p>
+                                <br />
+                            <td />
+                        <tr />
+
+                        <tr><td><strong id="strong2">Birthday</strong></td></tr>
+                        <tr><td><select class="thh" name="user_month">Month<option>Month</option><option>feb</option><option>Mar</option><option>April</option><option>june</option><option>july</option><option>aug</option>
+                            </select><select id="dy"><option>Day</option><option>1</option></select><select id="dy"><option>Year</option></select><br /><br />
+                              </td></tr>
+                       
+
+                        <tr><td><strong id="strong2">Gender</strong></td></tr>
+
+
+                        <tr><td><select id="mon" name="user_gender"><option>I am...<option></option><option>male</option><option>Female</option></select><br /><br /><p id="gender_error" class="coll"></p></td></tr>
+                        
+                        <tr><td><strong id="strong2">Mobile phone</strong></td></tr>
+
+                        <tr><td>  <input type="number" name="mobilenumber" placeholder="+92" id="putt" /><br /><br /></td></tr>
+                        <p id="mobil_error" class="coll"></p>
+
+                        <tr><td><strong id="strong2">Your current email address</strong></td></tr>
+
+                        <tr><td>  <input type="text" name="currentemail" placeholder="" id="putt" /></td></tr>
+                        <p id=" currentemail_error" class="coll"></p>
+                        <tr id="wid"><td>
+                                         <input type="button"  name="nextstep" onclick="vali()" class="loginBtn loginBtn--google"  value="Next step"/>
+                                         </td></tr>
+                       
+            
+
+
+
+            </table></form>
+
+
+
+        </div>
+        
+        </div>
+          </div>
+      
+     
+     
+</body>
+</html>
